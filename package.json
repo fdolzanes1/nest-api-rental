@@ -10,7 +10,7 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "prisma:migrate": "",
+    "prisma:migrate": "npx prisma migrate dev",
     "prisma:seed": "ts-node prisma/seeds/main.seed.ts",
     "prisma:reset": "npx prisma migrate reset",
     "start": "node ./dist/main.js",

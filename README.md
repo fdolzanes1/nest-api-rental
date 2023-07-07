@@ -39,18 +39,17 @@ $ docker-compose up -d
 ## Running the app
 
 ```bash
+# migrating your database
+$ npm run prisma:migrate
+
+# seeding your database
+$ npm run prisma:seed
+
 # watch mode
 $ npm run start:dev
 
 # production mode
 $ npm run start:prod
-```
-
-## Running the seed
-
-```bash
-# watch mode
-$ npm run prisma:seed
 ```
 
 ## Running Test
